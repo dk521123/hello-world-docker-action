@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Call Demo action
         id: call-demo
-        uses: your-github-user-name/hello-world-docker-action@1bba80655c8b8611af37da21c5fc56e155ce4c42
+        uses: dk521123/hello-world-docker-action@1bba80655c8b8611af37da21c5fc56e155ce4c42
         with:
           input_id1: 'Hello world!!!?'
       - name: Show result
