@@ -1,0 +1,19 @@
+name: 'hello_world_docker_demo'
+description: 'This is just hello world for docker...'
+branding:
+  icon: check-circle
+  color: orange
+inputs:
+  input_id1:
+    description: 'This is a sample input'
+    required: true
+    default: 'Hi, world'
+outputs:
+  output_id1:
+    description: 'This is a sample output1'
+# ★ここに注目
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  env:
+    INPUT_ID1: ${{ inputs.input_id1}}
